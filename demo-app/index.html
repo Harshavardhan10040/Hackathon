@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login — Demo Application</title>
+    <style>
+      body { font-family: 'Segoe UI', sans-serif; background: #0f172a; color: #f8fafc; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+      .login-card { background: #1e293b; padding: 32px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); width: 100%; max-width: 360px; border: 1px solid rgba(255,255,255,0.1); }
+      .login-card h2 { margin-top: 0; margin-bottom: 20px; text-align: center; color: #38bdf8; }
+      .form-group { margin-bottom: 16px; }
+      .form-group label { display: block; margin-bottom: 6px; font-size: 0.85rem; color: #94a3b8; }
+      .form-group input { width: 100%; padding: 10px 12px; border-radius: 6px; border: 1px solid #334155; background: #0f172a; color: #fff; box-sizing: border-box; }
+      .btn-submit { width: 100%; padding: 12px; border: none; border-radius: 6px; background: #0284c7; color: #fff; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+      .btn-submit:hover { background: #0369a1; }
+    </style>
+  </head>
+  <body>
+    <div class="login-card">
+      <h2>Welcome Back</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Email / Username</label>
+          <input type="email" id="email" required placeholder="user@example.com" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" required placeholder="••••••••" />
+        </div>
+        <button type="submit" class="btn-submit">Sign In</button>
+      </form>
+    </div>
+  </body>
+</html>
